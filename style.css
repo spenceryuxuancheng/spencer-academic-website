@@ -406,18 +406,22 @@ footer {
     }
 
     .profile-image img {
-        width: 180px;
-        height: 180px;
-        border-radius: 0;
-        box-shadow: none;
-        border: 2px solid #f0f0f0;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border: none;
+        margin: 0 auto;
+        display: block;
     }
 
     .bio-text {
         background: #f8f9fa;
         padding: 2rem;
-        border-radius: 0;
+        border-radius: 10px;
         border: 1px solid #e0e0e0;
+        margin-top: 1rem;
     }
 
     .bio-links {
@@ -438,19 +442,28 @@ footer {
     .timeline-date {
         position: static;
         width: auto;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         align-self: flex-start;
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 
     .timeline-content {
         flex: 1;
         width: 100%;
         margin-left: 0;
+        padding: 1.5rem;
+        margin-top: 0.5rem;
     }
 
     .timeline-content::before {
         left: -30px !important;
-        top: 20px;
+        top: 30px;
+    }
+
+    .timeline-item {
+        margin-bottom: 2rem;
+        padding-bottom: 0;
     }
 
     .contact-content {
@@ -463,6 +476,11 @@ footer {
 
     .section {
         padding: 80px 0;
+    }
+    
+    /* Additional mobile optimizations for biography section */
+    #biography .container {
+        padding: 0 15px;
     }
 }
 
@@ -485,6 +503,32 @@ footer {
     .btn {
         width: 200px;
         text-align: center;
+    }
+    
+    /* Extra small device optimizations */
+    .profile-image img {
+        max-width: 250px;
+        border-radius: 8px;
+    }
+    
+    .bio-text {
+        padding: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .timeline-date {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .timeline-content {
+        padding: 1.2rem;
+        margin-top: 0.3rem;
+    }
+    
+    .timeline-item {
+        margin-bottom: 1.5rem;
     }
 }
 
