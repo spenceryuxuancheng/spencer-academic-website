@@ -402,6 +402,22 @@ footer {
     .bio-content {
         flex-direction: column;
         text-align: center;
+        gap: 2rem;
+    }
+
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+        border-radius: 0;
+        box-shadow: none;
+        border: 2px solid #f0f0f0;
+    }
+
+    .bio-text {
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 0;
+        border: 1px solid #e0e0e0;
     }
 
     .bio-links {
@@ -409,27 +425,32 @@ footer {
     }
 
     .timeline::before {
-        left: 20px;
+        left: 30px;
     }
 
     .timeline-item {
-        flex-direction: row !important;
-        margin-left: 60px;
+        flex-direction: column !important;
+        margin-left: 0;
+        margin-bottom: 2rem;
+        align-items: flex-start;
     }
 
     .timeline-date {
-        position: absolute;
-        left: -80px;
-        top: 0;
-        width: 120px;
+        position: static;
+        width: auto;
+        margin-bottom: 1rem;
+        align-self: flex-start;
     }
 
     .timeline-content {
         flex: 1;
+        width: 100%;
+        margin-left: 0;
     }
 
     .timeline-content::before {
-        left: -40px !important;
+        left: -30px !important;
+        top: 20px;
     }
 
     .contact-content {
